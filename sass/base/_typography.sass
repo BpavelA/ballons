@@ -2,7 +2,7 @@ body
  font-family: Roboto
  font-weight: 400
  color: $color-secondary
- font-size: 1.6rem
+ font-size: $paragraf
  letter-spacing: .2rem
  
  
@@ -36,7 +36,7 @@ body
 
 .title-secondary
  text-align: center
- font-size: 3.6rem
+ font-size: $header-h2
  letter-spacing: 1rem
  text-transform: uppercase
  font-weight: 800
@@ -45,5 +45,17 @@ body
  color: transparent
  transition: .4s all
  &:hover
-  transform: skewY(2deg) skewX(15deg) scale(1.1)
+  transform: skewY(2deg) skewX(10deg) scale(1.05)
   text-shadow: 0rem .4rem .4rem rgba(black, .25)
+
+.title-third
+  font-size: $header-h3
+  text-transform: uppercase
+  font-weight: 700
+
+.text
+  font-size: $paragraf
+  font-weight: 400
+  letter-spacing: .2rem
+  color: $color-secondary
+  line-height: 140%
