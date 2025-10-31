@@ -1,6 +1,53 @@
 .tour-card
+ position: relative
  height: 52rem
  width: 34.1rem
- transition: all 1s
- &:hover
+ perspective: 150rem
+ -moz-perspective: 150rem
+ &__image
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%) 
+ &__side
+  box-shadow: $box-shadow
+  height: 52rem
+  transition: all 1s ease
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  backface-visibility: hidden
+  &_front
+  &_back
+   display: flex
+   flex-direction: column
+   justify-content: space-evenly
+   transform: rotateY(-180deg)
+   background: linear-gradient(180deg, #C3956A 4%, rgba(#A14F03, 100%) 100%)
+ &:hover &__side_front
   transform: rotateY(180deg)
+ &:hover &__side_back
+  transform: rotateY(0)
+ &__title
+  font-size: 2.8rem
+  font-weight: 200
+  text-transform: uppercase
+  color: white
+  background: linear-gradient(90deg, #C3956A 4%, rgba(#A14F03, 100%) 100%)
+ &__list
+  list-style: none
+  text-decoration: underline
+  font-weight: 700
+  li
+   margin-bottom: 2rem
+
+
+
+.full-price
+ font-size: $paragraf
+ text-transform: uppercase
+ color: white
+ font-weight: 300
+
+.price
+ font-size: 6rem
+ color: white
+ font-weight: 500
