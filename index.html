@@ -215,7 +215,12 @@
           >
         </section>
         <section class="section-feedback">
-          <h2 class="title-secondary margin-bottom-80px title-secondary_white">
+          <div class="bg-gradient"></div>
+          <video class="bg-video" autoplay muted loop>
+            <source src="/img/hot-air-balloons.mp4" />
+            <source src="/img/hot-air-balloons.webm" />
+          </video>
+          <h2 class="title-secondary title-secondary_white">
             Отзывы наших клиентов
           </h2>
           <div class="feedback-card">
@@ -258,6 +263,40 @@
           <a href="#" class="btn btn_animated margin-bottom-80px"
             >Забронировать</a
           >
+        </section>
+        <section class="section-form">
+          <div class="form-wrapper">
+            <div class="form-wrapper__background"></div>
+            <form action="#" class="form-booking">
+              <h2 class="title-secondary margin-bottom-30px">
+                Забронировать тур
+              </h2>
+              <div class="form-booking__group">
+                <input
+                  type="text"
+                  id="name"
+                  placeholder="Имя Фамилия"
+                  required
+                />
+                <label for="name" class="form-input">Ваше имя и фамилия</label>
+              </div>
+              <div class="form-booking__group">
+                <input
+                  type="email"
+                  name=""
+                  id="email"
+                  placeholder="Ваш email"
+                  required
+                />
+                <label for="email">Адрес электронной почты</label>
+              </div>
+              <input type="radio" name="group" id="" />
+              <input type="radio" name="individual" id="" />
+              <a href="#" class="btn margin-bottom-80px"
+                >Забронировать</a
+              >
+            </form>
+          </div>
         </section>
       </main>
     </div>
