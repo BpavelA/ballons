@@ -290,11 +290,26 @@
                 />
                 <label for="email">Адрес электронной почты</label>
               </div>
-              <input type="radio" name="group" id="" />
-              <input type="radio" name="individual" id="" />
-              <a href="#" class="btn margin-bottom-80px"
-                >Забронировать</a
-              >
+              <div class="form-radio margin-bottom-50px">
+                <div class="form-radio__group">
+                  <input type="radio" id="group-tour" name="tour" />
+                  <label for="group-tour"
+                    ><span class="form-radio-button"></span>Групповой тур</label
+                  >
+                </div>
+                <div class="form-radio__group">
+                  <input type="radio" id="individual-tour" name="tour" />
+                  <label for="individual-tour"
+                    ><span class="form-radio-button"></span>Индивидуальный
+                    тур</label
+                  >
+                </div>
+              </div>
+              <div class="form-booking__button">
+                <button class="btn btn-brown">
+                  Забронировать
+                </button>
+              </div>
             </form>
           </div>
         </section>

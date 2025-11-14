@@ -1,13 +1,14 @@
 .btn
   z-index: 2
   font-size: 2rem
-  &:link, &:visited
+  &, &:link, &:visited
     @include style-link($color-secondary)
     background-color: $color-primary
     padding: 1.5rem 4rem
     border-radius: 5rem
     transition: .25s all
     position: relative
+    border: none
   &:hover
     transform: translateY(-.3rem)
     box-shadow: $box-shadow
@@ -37,3 +38,11 @@
   height: 5.4rem
   width: 27.7rem
   margin: 0 auto
+
+.btn-brown
+  &, &:link, &:visited
+    background: $brown-l
+    color: $color-primary
+  &:hover
+  &::after
+    background: $brown-l
