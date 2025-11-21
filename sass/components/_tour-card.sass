@@ -4,6 +4,9 @@
  width: 31rem
  perspective: 150rem
  -moz-perspective: 150rem
+ @include respond(tab-land)
+   height: 45rem
+   width: 24rem
  &__image
   width: 31rem
   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 89%) 
@@ -40,10 +43,14 @@
   position: absolute
   top: 17.5rem
   right: 0
+  @include respond(tab-land)
+   font-size: 2.6rem
  &__span
   background: linear-gradient(90deg, #C3956A 4%, rgba(#A14F03, 100%) 100%)
   &_1
     padding: 1.4rem 2rem .1rem 2rem
+    @include respond(tab-land)
+      padding-bottom: .2rem
   &_2
     position: absolute
     top: 3.3rem
@@ -56,6 +63,8 @@
     display: inline-block
     margin-bottom: 2rem
     border-bottom: 1px solid $color-secondary
+    @include respond(tab-land)
+      font-size: 1.2rem
     &:last-child
       margin-bottom: 0
 

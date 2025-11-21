@@ -1,6 +1,8 @@
 .btn
   z-index: 2
   font-size: 2rem
+  @include respond(tab-land)
+   font-size: 1.6rem
   &, &:link, &:visited
     @include style-link($color-secondary)
     background-color: $color-primary
@@ -35,9 +37,10 @@
     animation-fill-mode: backwards
 
 .btn-mini
-  height: 5.4rem
   width: 27.7rem
   margin: 0 auto
+  @include respond(tab-land)
+  width: 22rem
 
 .btn-brown
   &, &:link, &:visited
