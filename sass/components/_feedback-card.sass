@@ -12,8 +12,16 @@
   height: 20rem
   width: 76rem
   padding: 2rem 10rem
+ @include respond(tab-port)
+  width: 90%
+  height: 36rem
+  transform: skewX(-7deg)
+  padding: 1rem 8rem
+  text-align: center
  & > *
   transform: skewX(15deg)
+  @include respond(tab-port)
+   transform: skewX(7deg)
  &__person
   width: 16rem
   height: 16rem
@@ -24,6 +32,9 @@
   margin-right: 5rem
   position: relative
   overflow: hidden
+  @include respond(tab-port)
+   float: none
+   margin: 0 auto 2rem auto
   img
    height: 100%
    transform: scale(1.2)

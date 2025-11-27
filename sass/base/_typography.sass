@@ -23,6 +23,9 @@ body
   animation-fill-mode: backwards
   @include respond(tab-land)
    font-size: 4rem
+  @include respond(tab-land)
+   font-size: 3.5rem
+   letter-spacing: .5rem
  &__secondary
   display: block
   letter-spacing: .5rem
@@ -38,6 +41,9 @@ body
   @include respond(tab-land)
    font-size: 3rem
    margin-bottom: 3.5rem
+  @include respond(tab-land)
+   font-size: 2.5rem
+   letter-spacing: .2rem
 
 .title-secondary
  position: relative
@@ -54,6 +60,9 @@ body
  @include respond(tab-land)
    font-size: 2.6rem
    margin-bottom: 5rem !important
+ @include respond(tab-port)
+   letter-spacing: .6rem
+   margin-bottom: 3rem !important
  &:hover
   transform: skewY(2deg) skewX(10deg) scale(1.05)
   text-shadow: 0rem .4rem .4rem rgba(black, .25)
